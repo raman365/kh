@@ -43,7 +43,6 @@ const App = () => {
       if (!audioRef.current) {
         const audio = new Audio(welcome);
         audioRef.current = audio;
-        audio.volume = 0.25;
 
         audio.addEventListener("loadedmetadata", () => {
           audio.currentTime = 32;
